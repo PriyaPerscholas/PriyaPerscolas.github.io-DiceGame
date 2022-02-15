@@ -18,9 +18,12 @@ function rollTheDice() {
         var randomNumber2 = Math.floor(Math.random() * 6) + 1;
         var randomNumber3 = Math.floor(Math.random() * 6) + 1;
         var randomNumber4 = Math.floor(Math.random() * 6) + 1;
+for(let i=0;i<5;i++)
+{
 
-        let random=randomNumber1+randomNumber2;
-        let random2=randomNumber3+randomNumber4;
+}
+        var random=randomNumber1+randomNumber2;
+        var random2=randomNumber3+randomNumber4;
         
 
             document.querySelector(".img1").setAttribute("src",
