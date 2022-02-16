@@ -19,35 +19,28 @@ function rollTheDice() {
         var randomNumber2 = Math.floor(Math.random() * 6) + 1;
         var randomNumber3 = Math.floor(Math.random() * 6) + 1;
         var randomNumber4 = Math.floor(Math.random() * 6) + 1;
-for(let i=0;i<5;i++)
-{
 
-}
         var random=randomNumber1+randomNumber2;
         var random2=randomNumber3+randomNumber4;
         
 
-            document.querySelector(".img1").setAttribute("src",
-                "dice" + randomNumber1 + ".png");
-            document.querySelector(".img2").setAttribute("src",
-                "dice" + randomNumber2 + ".png");
-            document.querySelector(".img3").setAttribute("src",
-                "dice" + randomNumber3 + ".png");
-            document.querySelector(".img4").setAttribute("src",
-                "dice" + randomNumber4 + ".png");
+            document.querySelector(".img1").setAttribute("src","dice" + randomNumber1 + ".png");
+            document.querySelector(".img2").setAttribute("src","dice" + randomNumber2 + ".png");
+            document.querySelector(".img3").setAttribute("src","dice" + randomNumber3 + ".png");
+            document.querySelector(".img4").setAttribute("src","dice" + randomNumber4 + ".png");
 
         if (random === random2) {
-            document.querySelector("h1").innerHTML = "Draw!";
+            document.querySelector("h2").innerHTML = "Draw!";
         }
 
         else if (random < random2)
          {
-            document.querySelector("h1").innerHTML
+            document.querySelector("h2").innerHTML
                             = (player2 + " WINS!");
         }
 
         else {
-            document.querySelector("h1").innerHTML
+            document.querySelector("h2").innerHTML
                             = (player1 + " WINS!");
         }
     }, 2500);
