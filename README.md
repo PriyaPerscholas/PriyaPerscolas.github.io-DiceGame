@@ -11,4 +11,4 @@ Planning to continue the game for 5 times, the scorce board is to setup in the D
 
 Technologies used:HTML,CSS,JavaScript.
 
-file:///C:/Users/PriyaS/Desktop/gameLab/PriyaPerscolas.github.io-gameProject/index.html
+
