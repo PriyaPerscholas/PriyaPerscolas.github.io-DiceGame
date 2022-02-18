@@ -15,6 +15,8 @@ function editNames() {
 // Function to roll the dice
 function rollTheDice() {
     setTimeout(function () {
+    
+        
         var randomNumber1 = Math.floor(Math.random() * 6) + 1;
         var randomNumber2 = Math.floor(Math.random() * 6) + 1;
         var randomNumber3 = Math.floor(Math.random() * 6) + 1;
@@ -22,13 +24,13 @@ function rollTheDice() {
 
         var random=randomNumber1+randomNumber2;
         var random2=randomNumber3+randomNumber4;
+      
         
-
             document.querySelector(".img1").setAttribute("src","dice" + randomNumber1 + ".png");
             document.querySelector(".img2").setAttribute("src","dice" + randomNumber2 + ".png");
             document.querySelector(".img3").setAttribute("src","dice" + randomNumber3 + ".png");
             document.querySelector(".img4").setAttribute("src","dice" + randomNumber4 + ".png");
-
+    
         if (random === random2) {
             document.querySelector("h2").innerHTML = "Draw!";
         }
@@ -43,5 +45,7 @@ function rollTheDice() {
             document.querySelector("h2").innerHTML
                             = (player1 + " WINS!");
         }
+        
     }, 2500);
+
 }
