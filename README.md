@@ -10,3 +10,4 @@ Future Scope:
 Planning to continue the game for 5 times, the scorce board is to setup in the DOM and capture the results for each turn. Then sum up the results of each turn to figure out ,how is the winner at the end of 5 turns.Have a plan for restart option,when players wants to start from  beginning.
 
 Technologies used:HTML,CSS,JavaScript.
+file:///C:/Users/PriyaS/Desktop/gameLab/PriyaPerscolas.github.io-gameProject/index.html
