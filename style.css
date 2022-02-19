@@ -29,48 +29,38 @@
         transition: all 0.75s;
     }
   
-
+    .name {
+        position: relative;
+        font-weight: bold;
+        font-size: 38px;
+        text-align: center;
+    }
+      
+    .pl {
+        font-size: 24px;
+    }
+      
+    .tscore {
+        background-color: #fff;
+        border-radius: 9px;
+        width: 65%;
+        padding: 2rem;
+        text-align: center;
+        transition: all 0.75s;
+    }
+      
+    .score {
+        font-size: 38px;
+        font-weight: bold;
+        margin-bottom: auto;
+        padding-top: 10px;
+    }
+      
+    .player--active {
+        background-color:rgb(79, 152, 177);
+    }
     
     body {
         background-color:wheat;
         margin: 0;
-    }
-  
-  
-    h2 {
-        margin: 20px;
-        font-family: "Lobster", cursive;
-        text-shadow: 5px 0 #232931;
-        font-size: 4.5rem;
-        color:darkmagenta;
-        text-align: center;
-    }
-  
-    p {
-        font-size: 2rem;
-        color:darkmagenta;
-        font-family: "Indie Flower", cursive;
-    }
-  
-    img {
-        width: 75%;
-    }
-  
-    .bottom {
-        padding-top: 30px;
-    }
-  
-    .butn {
-        background:darkmagenta;
-        font-family: "Indie Flower", cursive;
-        border-radius: 7px;
-        color: #ffff;
-        font-size: 30px;
-        padding: 16px 25px 16px 25px;
-        text-decoration: none;
-    }
-  
-    .butn:hover {
-        background: #232931;
-        text-decoration: none;
     }
