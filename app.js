@@ -43,7 +43,6 @@ document.querySelector('.btn--roll').addEventListener('click', function () {
       
       // 1. Add current score to active player's score
       scores[activePlayer] += currentScore;
-      // scores[1] = scores[1] + currentScore
     
       document.getElementById(`score--${activePlayer}`).textContent = scores[activePlayer];
     
