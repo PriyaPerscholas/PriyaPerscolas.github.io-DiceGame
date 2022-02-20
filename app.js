@@ -24,6 +24,44 @@ document.querySelector('.btn--roll').addEventListener('click', function () {
       }
     }
   });
+
+  const switchPlayer = function () {
+      document.getElementById(`current--${activePlayer}`).textContent = 0;
+        currentScore = 0;
+        if(activePlayer === 0) {
+            activePlayer = 1;
+          } 
+            else {
+            activePlayer = 0;
+           }
+           document.querySelector('.player--0').classList.toggle('player--active');
+           document.querySelector('.player--1').classList.toggle('player--active');
+    };
+
+    document.querySelector('.btn--hold').addEventListener('click', function () {
+    if (playing) {
+      
+      // 1. Add current score to active player's score
+      scores[activePlayer] += currentScore;
+      // scores[1] = scores[1] + currentScore
+    
+      document.getElementById(`score--${activePlayer}`).textContent = scores[activePlayer];
+    
+      // 2. Check if player's score is >= 30
+      if (scores[activePlayer] >= 30) {
+        
+        // Finish the game
+        playing = false;
+    
+        document.querySelector(`.player--${activePlayer}`).classList.add('player--winner');
+        document.querySelector(`.player--${activePlayer}`) .classList.remove('player--active');
+      } else {
+        
+        // Switch to the next player
+        switchPlayer();
+      }
+    }
+  });
 // Player name
 var player1 = "Player 1";
 var player2 = "Player 2";
@@ -41,36 +79,8 @@ function editNames() {
 function rollTheDice() {
     setTimeout(function () {
     
-        
-        var randomNumber1 = Math.floor(Math.random() * 6) + 1;
-        var randomNumber2 = Math.floor(Math.random() * 6) + 1;
-        var randomNumber3 = Math.floor(Math.random() * 6) + 1;
-        var randomNumber4 = Math.floor(Math.random() * 6) + 1;
-
-        var random=randomNumber1+randomNumber2;
-        var random2=randomNumber3+randomNumber4;
-      
-        
-            document.querySelector(".img1").setAttribute("src","dice" + randomNumber1 + ".png");
-            document.querySelector(".img2").setAttribute("src","dice" + randomNumber2 + ".png");
-            document.querySelector(".img3").setAttribute("src","dice" + randomNumber3 + ".png");
-            document.querySelector(".img4").setAttribute("src","dice" + randomNumber4 + ".png");
     
-        if (random === random2) {
-            document.querySelector("h2").innerHTML = "Draw!";
         }
 
-        else if (random < random2)
-         {
-            document.querySelector("h2").innerHTML
-                            = (player2 + " WINS!");
-        }
-
-        else {
-            document.querySelector("h2").innerHTML
-                            = (player1 + " WINS!");
-        }
-        
-    }, 2500);
 
 }
