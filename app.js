@@ -1,4 +1,29 @@
+let scores, currentScore, activePlayer, playing;
 
+// Rolling dice functionality
+document.querySelector('.btn--roll').addEventListener('click', function () {
+    if (playing) {
+      
+      // 1. Generating a random dice roll
+      const dice = Math.floor(Math.random() * 6) + 1;
+    
+      // 2. Display dice
+      document.querySelector('.dice').src = `dice-${dice}.png`;
+    
+      // 3. Check for rolled 1
+      if (dice !== 1) {
+        
+        // Add dice to current score
+        currentScore += dice;
+        document.getElementById(`current--${activePlayer}` ).textContent = currentScore;
+      }
+      else {
+        
+        // Switch to next player
+        switchPlayer();
+      }
+    }
+  });
 // Player name
 var player1 = "Player 1";
 var player2 = "Player 2";
