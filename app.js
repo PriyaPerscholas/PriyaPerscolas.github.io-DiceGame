@@ -62,25 +62,21 @@ document.querySelector('.btn--roll').addEventListener('click', function () {
       }
     }
   });
-// Player name
-var player1 = "Player 1";
-var player2 = "Player 2";
+//Starting conditions
+const init = function () {
+  scores = [0, 0];
+  currentScore = 0;
+  activePlayer = 0;
+  playing = true;
+  
+  document.querySelector('#score--0').textContent = 0;
+  document.getElementById('score--1').textContent = 0;
+  document.getElementById('current--0').textContent = 0;
+  document.getElementById('current--1').textContent = 0;
 
-// Function to change the player name
-function editNames() {
-    player1 = prompt("Change Player1 name");
-    player2 = prompt("Change player2 name");
-
-    document.querySelector("p.Player1").innerHTML = player1;
-    document.querySelector("p.Player2").innerHTML = player2;
-}
-
-// Function to roll the dice
-function rollTheDice() {
-    setTimeout(function () {
-    
-    
-        }
-
-
-}
+  document.querySelector('.player--0').classList.remove('player--winner');
+  document.querySelector('.player--1').classList.remove('player--winner');
+  document.querySelector('.player--0').classList.add('player--active');
+  document.querySelector('.player--1').classList.remove('player--active');
+};
+init();
