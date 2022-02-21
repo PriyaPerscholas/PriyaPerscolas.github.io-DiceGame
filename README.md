@@ -6,16 +6,8 @@ Dice game is played between two players.Each person takes turn and the person sc
 
 This is a simple dice game where two players have the chance to roll the dice to try and achieve a score of 100. Each player repeatedly rolls a die until either a 1 is rolled or the player decides to "hold".
 
-The rules of the game are:
-
-When a player rolls a 1, their total score reverts to 0 and it becomes the next player's turn.
-When the player rolls a 2 - 6, the score is added to their turn total and they can continue to play
-When the player chooses to "hold", their turn total is added to their total score, and it becomes the next player's turn.
-
-
-The player who first scores 100 or more points wins.
-
 How to Play !
+
 The game has 2 players, playing in rounds.
 In each turn, a player rolls a dice as many times as he/she whishes. Each result gets added to his/her Total score.
 BUT, if the player rolls a 1, then all his/her Total score gets lost. After that, it's the next player's turn.
