@@ -11,7 +11,18 @@ The rules of the game are:
 When a player rolls a 1, their total score reverts to 0 and it becomes the next player's turn.
 When the player rolls a 2 - 6, the score is added to their turn total and they can continue to play
 When the player chooses to "hold", their turn total is added to their total score, and it becomes the next player's turn.
+
+
 The player who first scores 100 or more points wins.
+
+How to Play !
+The game has 2 players, playing in rounds.
+In each turn, a player rolls a dice as many times as he/she whishes. Each result gets added to his/her Total score.
+BUT, if the player rolls a 1, then all his/her Total score gets lost. After that, it's the next player's turn.
+The player can choose to 'Hold', which means that his/her Total score gets added to his/her Final score. After that, it's the next player's turn.
+The first player to reach 100 points on Final score wins the game.
+Players can also set a winning score at any point of the game.
+Default winning score is 100.
 
 Technologies used:HTML,CSS,JavaScript.
 
