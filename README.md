@@ -16,7 +16,7 @@ The first player to reach 100 points on Final score wins the game.
 Players can also set a winning score at any point of the game.
 Default winning score is 100.
 
-Can access my game using the link below 
+Can access my game using the link below https://priyaperscholas.github.io/PriyaPerscolas.github.io-gameProject/
 
 Technologies used:HTML,CSS,JavaScript.
 
